@@ -1,7 +1,15 @@
 import React from "react";
-import { RiReactjsLine, RiGithubLine} from "react-icons/ri";
+import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
-import {SiMongodb,SiTypescript, SiExpress,SiTailwindcss, SiBootstrap, SiMysql} from "react-icons/si";
+import {
+  SiMongodb,
+  SiTypescript,
+  SiExpress,
+  SiTailwindcss,
+  SiBootstrap,
+  SiMysql,
+  SiGithub
+} from "react-icons/si";
 const Skills = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
@@ -31,6 +39,9 @@ const Skills = () => {
         <div className="rounded-2xl border-4 border-neutral-800 p-4">
           <SiTailwindcss className="text-4xl text-cyan-400" />
         </div>
+          <div className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiGithub className="text-4xl " />
+          </div>
       </div>
     </div>
   );
