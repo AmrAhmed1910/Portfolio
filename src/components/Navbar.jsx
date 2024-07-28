@@ -6,14 +6,13 @@ import Logo from '../assets/Logo.png';
 const NavBar = () => {
     return (
          <>
-        <Navbar bg="transparent" data-bs-theme="dark" className="h-20 backdrop-blur-lg">
+        <Navbar bg="transparent" data-bs-theme="dark" className="mb-10 flex items-center justify-between backdrop-blur-lg">
           <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand className="flex flex-shrink-0 d-inline-block align-center" href="#home">
             <img
               src={Logo}
-              width="50"
-              height="50"
-              className="d-inline-block align-center"
+              width="45"
+              height="45"
             />
           </Navbar.Brand>
             <Nav className="flex items-left gap-6 font-bold text-xl  ">

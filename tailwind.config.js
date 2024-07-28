@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {      
+    extend: {  
       keyframes: {
       typing: {
         "0%": {
@@ -26,7 +26,7 @@ export default {
       }
     },
     animation: {
-      typing: "typing 2.5s steps(25)  alternate, blink .7s infinite"
+      typing: "typing 2.5s steps(25)  alternate, blink .7s "
     }
   },
 },
