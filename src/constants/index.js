@@ -1,4 +1,4 @@
-export const HERO_CONTENT = `I am a student at the Faculty of Communication and Information Technology Engineering at Helwan University, specializing in web development. I have expertise in both front-end and back-end technologies, including React, MongoDB, and TypeScript. My work showcases my dedication to creating efficient, user-friendly applications. Additionally, I possess strong research skills, enabling me to stay updated with the latest industry trends and technologies.`;
+export const HERO_CONTENT = `I am a student of Communication and Information Technology at the Faculty of Engineering at Helwan University, specializing in web development. I have expertise in both front-end and back-end technologies, including React, MongoDB, and TypeScript. My work showcases my dedication to creating efficient, user-friendly applications. Additionally, I possess strong research skills, enabling me to stay updated with the latest industry trends and technologies.`;
 
 export const MY_DREAMS = [
   {
