@@ -1,69 +1,56 @@
-
-
 export const HERO_CONTENT = `I am a student at the Faculty of Communication and Information Technology Engineering at Helwan University, specializing in web development. I have expertise in both front-end and back-end technologies, including React, MongoDB, and TypeScript. My work showcases my dedication to creating efficient, user-friendly applications. Additionally, I possess strong research skills, enabling me to stay updated with the latest industry trends and technologies.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
-
-export const EXPERIENCES = [
+export const MY_DREAMS = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    title: "Professional Goals",
+    description:
+      "Take on leadership roles in tech, work on innovative projects that push boundaries, and start my own tech company one day.",
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    title: "Learning and Skills",
+    description:
+      "Master advanced technologies like React, Node.js, and TypeScript, and explore AI and machine learning.",
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    title: "Personal Growth",
+    description:
+      "Maintain a good work-life balance, build a strong professional network, and support and mentor others in the tech community.",
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    title: "Giving Back",
+    description:
+      "Contribute to open source projects, participate in tech events, and share knowledge through workshops and tutorials.",
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Porsche Database Management System",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Utilized SQL queries to store, retrieve, and manage data in the database efficiently. Designed database schemas, tables, and relationships to ensure data integrity and performance. Implemented Java for backend logic and business processes, used JDBC for connecting Java applications to the database, and designed a user-friendly GUI using Java Swing.",
+    technologies: ["MySQL", "Java", "Swing"],
   },
   {
-    title: "Task Management App",
+    title: "Weather Journal App",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Fetches weather data and user feelings on button click. Gets weather data via API, sends it to the server, and updates the UI. Uses Express for routing, middleware setup, and serving static files. Handles POST and GET requests for storing and retrieving project data.",
+    technologies: ["JavaScript", "Node.js", "Express"],
   },
   {
-    title: "Portfolio Website",
+    title: "Landing Page",
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Enhances transitions between sections with smooth scrolling, keeps navbar fixed for easy navigation, and highlights current section in navbar for user tracking. Aims for seamless browsing using JavaScript enhancements.",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Blogging Platform",
+    title: "To-Do List",
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "JavaScript project that allows users to create, edit, delete, and mark tasks as complete. Features separate sections for 'To-Do' and 'Finished' tasks.",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  phoneNo: "+201012207377",
+  email: "amrahmed191002@example.com",
 };

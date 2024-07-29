@@ -1,7 +1,8 @@
 import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
+import { FaNodeJs,FaHtml5,FaCss3Alt } from "react-icons/fa";
 import {
+  SiJavascript,
   SiMongodb,
   SiTypescript,
   SiExpress,
@@ -12,9 +13,18 @@ import {
 } from "react-icons/si";
 const Skills = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <h1 className="my-20 text-center text-4xl">Skills</h1>
+    <div className="border-b border-neutral-900 pb-24">
+      <h1 className="my-8 text-center text-4xl font-semibold ">Skills</h1>
       <div className="flex flex-wrap items-center justify-center gap-4">
+      <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaHtml5 className="text-4xl text-red-500" />
+        </div>
+        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaCss3Alt className="text-4xl text-blue-400" />
+        </div>
+        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiJavascript className="text-4xl text-yellow-400" />
+        </div>
         <div className="rounded-2xl border-4 border-neutral-800 p-4">
           <RiReactjsLine className="text-4xl text-cyan-400" />
         </div>
