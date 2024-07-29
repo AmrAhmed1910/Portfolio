@@ -27,7 +27,7 @@ const iconMotion = (duration) => ({
 const Skills = () => {
   return (
     <div className="border-b border-neutral-900 pb-24">
-      <h1 className="my-8 text-center text-4xl font-semibold ">Skills</h1>
+      <h1 className="my-8 text-center text-4xl font-semibold text-white">Skills</h1>
       <motion.div
       whileInView={{ opacity: 1, x: 0 }}
       initial={{ opacity: 0, x: -100 }}

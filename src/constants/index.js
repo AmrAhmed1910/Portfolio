@@ -53,4 +53,8 @@ export const PROJECTS = [
 export const CONTACT = {
   phoneNo: "+201012207377",
   email: "amrahmed191002@example.com",
+  linkedin: "https://www.linkedin.com/in/amr-ahmed-ar19101012/",
+  facebook: "https://www.facebook.com/amrahmed2002",
+  instagram: "https://www.instagram.com/amr_ahmed_19/",
 };
+
