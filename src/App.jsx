@@ -15,8 +15,10 @@ const App = () => {
     setShowWelcome(false);
   };
   return (
-        <div>
-        <div className="fixed top-0 bg-center bg-no-repeat bg-fixed inset-0 -z-10 h-full w-full px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#740093_130%)] "></div>
+    <div className="relative min-h-screen overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-950">
+    <div className="fixed absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #740093 130%)' }}>
+    </div>
+
     {showWelcome ? (
       <Welcome onComplete={handleWelcomeComplete} />
     ) : (
