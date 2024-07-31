@@ -11,8 +11,11 @@
     overflow:hidden;
 }
 .background {
-  position: fixed; 
-  inset: 0; 
+  position: fixed;
+  top:0;
+  right:0;
+  left:0; 
+  bottom:-20%;
   z-index: -10;
   background-image: radial-gradient(125% 125% at 50% 10%, #000 40%, #740093 130%);
   background-size: cover;
