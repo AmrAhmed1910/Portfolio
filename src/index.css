@@ -5,7 +5,10 @@
 
 #root {
     font-family: "inter", sans-serif;
-
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
 }
 .background {
   position: fixed; 
@@ -15,6 +18,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin:0;
+  padding:0;
 }
 ::-webkit-scrollbar {
     width: 8px;
