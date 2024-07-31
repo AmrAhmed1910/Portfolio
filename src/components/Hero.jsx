@@ -14,7 +14,7 @@ const Container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 py-20 lg:mb-35 ">
+    <div id="hero" className="border-b border-neutral-900 pb-32 pt-36 lg:mb-35 ">
       <div className="flex flex-wrap lg:flex-nowrap mx-auto">
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start lg:ml-20">
           <div className="flex flex-col items-center lg:items-start ">
@@ -45,7 +45,7 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/3 flex justify-center lg:justify-middle">
+        <div className="w-2/3 lg:w-1/3 flex mx-auto justify-center lg:justify-middle">
           <motion.div
             variants={Container(1.5)}
             initial={{ x: 200, opacity: 0 }}

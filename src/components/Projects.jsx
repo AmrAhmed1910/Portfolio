@@ -13,7 +13,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-neutral-900 pb-4">
       <h1 className="my-8 text-center text-4xl font-semibold text-white ">Projects</h1>
       <div>
         {PROJECTS.map((project, index) => (

@@ -24,112 +24,38 @@ const iconMotion = (duration) => ({
     },
   },
 });
+const skills = [
+  { icon: <FaHtml5 className="text-4xl text-red-500" />, delay: 2.5 },
+  { icon: <FaCss3Alt className="text-4xl text-blue-400" />, delay: 3 },
+  { icon: <SiJavascript className="text-4xl text-yellow-400" />, delay: 2.2 },
+  { icon: <RiReactjsLine className="text-4xl text-cyan-400" />, delay: 3.6 },
+  { icon: <SiTypescript className="text-4xl text-blue-500" />, delay: 1.5 },
+  { icon: <FaNodeJs className="text-4xl text-green-500" />, delay: 4 },
+  { icon: <SiExpress className="text-4xl" />, delay: 3.3 },
+  { icon: <SiMongodb className="text-4xl text-green-500" />, delay: 1.8 },
+  { icon: <SiMysql className="text-4xl text-cyan-800" />, delay: 2 },
+  { icon: <SiBootstrap className="text-4xl text-purple-600" />, delay: 1.7 },
+  { icon: <SiTailwindcss className="text-4xl text-cyan-400" />, delay: 3.8 },
+  { icon: <SiGithub className="text-4xl" />, delay: 1.3 },
+];
+
 const Skills = () => {
   return (
-    <div className="border-b border-neutral-900 pb-24">
+    <div id="skills" className=" border-b border-neutral-900 pb-24">
       <h1 className="my-8 text-center text-4xl font-semibold text-white">Skills</h1>
-      <motion.div
-      whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: -100 }}
-      transition={{ duration: 1.5 }}
-       className="flex flex-wrap items-center justify-center gap-4">
-        <motion.div
-          variants={iconMotion(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <FaHtml5 className="text-4xl text-red-500" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <FaCss3Alt className="text-4xl text-blue-400" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(2.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiJavascript className="text-4xl text-yellow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(3.6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <RiReactjsLine className="text-4xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(1.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiTypescript className="text-4xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <FaNodeJs className="text-4xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(3.3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiExpress className="text-4xl" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(1.8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiMongodb className="text-4xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiMysql className="text-4xl text-cyan-800" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(1.7)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiBootstrap className="text-4xl text-purple-600" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(3.8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiTailwindcss className="text-4xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconMotion(1.3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-3 border-neutral-900 p-4"
-        >
-          <SiGithub className="text-4xl " />
-        </motion.div>
-      </motion.div>
+        <div className=" flex flex-wrap  items-center justify-center gap-4 lg:w-1/2 mx-auto">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              variants={iconMotion(skill.delay)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-3 border-neutral-900 p-4"
+            >
+              {skill.icon}
+            </motion.div>
+          ))}
+        </div>
     </div>
   );
 };
