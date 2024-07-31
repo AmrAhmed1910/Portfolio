@@ -16,9 +16,7 @@ const App = () => {
   };
   return (
         <div>
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="bg-scroll absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#740093_130%)] "></div>
-      </div>
+        <div className="fixed top-0 bg-center bg-no-repeat bg-fixed inset-0 -z-10 h-full w-full px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#740093_130%)] "></div>
     {showWelcome ? (
       <Welcome onComplete={handleWelcomeComplete} />
     ) : (

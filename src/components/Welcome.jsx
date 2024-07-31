@@ -9,7 +9,7 @@ const Welcome = ({ onComplete }) => {
       controls.start({ opacity: 0, transition: { duration: 1 } }).then(() => {
         onComplete();
       });
-    }, 3000);
+    }, 30000);
 
     return () => clearTimeout(timer);
   }, [controls, onComplete]);
@@ -21,7 +21,7 @@ const Welcome = ({ onComplete }) => {
       animate={controls}
     >
       <div className="w-max">
-        <h1 className="animate-typing whitespace-nowrap lg:h-14 h-14 text-2xl sm:text-3xl md:text-4xl lg:text-5xl overflow-hidden border-r-4 border-r-white pr-2 text-white font-bold">
+        <h1 className="animate-typing whitespace-nowrap lg:h-14 sm:text-3xl md:text-4xl lg:text-5xl overflow-hidden border-r-4 border-r-white pr-2 text-white font-bold">
           Hi, Welcome to my Portfolio.
         </h1>
       </div>

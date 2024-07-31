@@ -12,14 +12,11 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      // Calculate offset as a ratio of the viewport height
       setOffset(-window.innerHeight / 2 + window.innerHeight * 0.35);
     };
 
-    // Set initial offset
     handleResize();
 
-    // Update offset on window resize
     window.addEventListener('resize', handleResize);
 
     return () => {
