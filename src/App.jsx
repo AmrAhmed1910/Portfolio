@@ -15,10 +15,8 @@ const App = () => {
     setShowWelcome(false);
   };
   return (
-    <div className="relative min-h-screen overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-950">
-    <div className="fixed absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #740093 130%)' }}>
-    </div>
-
+    <div>
+      <div className="background"></div>
     {showWelcome ? (
       <Welcome onComplete={handleWelcomeComplete} />
     ) : (

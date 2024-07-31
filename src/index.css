@@ -7,6 +7,15 @@
     font-family: "inter", sans-serif;
 
 }
+.background {
+  position: fixed; 
+  inset: 0; 
+  z-index: -10;
+  background-image: radial-gradient(125% 125% at 50% 10%, #000 40%, #740093 130%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 ::-webkit-scrollbar {
     width: 8px;
   }
