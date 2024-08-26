@@ -1,4 +1,3 @@
-import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import {
