@@ -40,7 +40,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div id="skills" className=" border-b border-neutral-900 pb-24">
+    <motion.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.5, delay: 1 },}} id="skills" className=" border-b border-neutral-900 pb-24">
       <h1 className="my-8 text-center text-4xl font-semibold text-white">Skills</h1>
         <div className=" flex flex-wrap  items-center justify-center gap-4 lg:w-1/2 mx-auto">
           {skills.map((skill, index) => (
@@ -55,7 +55,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-    </div>
+    </motion.div>
   );
 };
 

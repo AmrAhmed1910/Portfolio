@@ -38,7 +38,7 @@ const Hero = () => {
               variants={Container(1)}
               initial="hidden"
               animate="visible"
-              className="lg:mx-10 max-w-xl py-6 font-light tracking-normal text-justify"
+              className="lg:mx-10 max-w-xl py-6 font-light tracking-normal "
             >
               {HERO_CONTENT}
             </motion.p>

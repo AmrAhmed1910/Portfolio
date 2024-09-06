@@ -7,6 +7,7 @@ import CONTACT from "./components/Contact";
 import Dreams from "./components/Dreams";
 import { useState } from "react";
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -29,6 +30,7 @@ const App = () => {
         <Dreams />
         <CONTACT />
         <SpeedInsights />
+        <Analytics />
       </div>
     </div> )}
     </div>
